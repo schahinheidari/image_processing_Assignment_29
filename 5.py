@@ -33,9 +33,9 @@ def slider_to_565():
 
 
 def slider_rgb():
-    r_8bit = "{:02X}".format(round(scale_r.get() / 3 * 255))
-    g_8bit = "{:02X}".format(round(scale_g.get() / 3 * 255))
-    b_8bit = "{:02X}".format(round(scale_b.get() / 3 * 255))
+    r_8bit = "{:02X}".format(round(scale_r.get() / 31 * 255))
+    g_8bit = "{:02X}".format(round(scale_g.get() / 63 * 255))
+    b_8bit = "{:02X}".format(round(scale_b.get() / 31 * 255))
     return f"#{r_8bit}{g_8bit}{b_8bit}"
 
 text_font = cv.FONT_ITALIC
@@ -79,6 +79,6 @@ label_b_output = Label(root, text=None, font=(text_font, fontSize_percent), fg="
 label_b_output.grid(row=20, column=2, pady=(10, 10), padx=(10, 20))
 
 label_color_output = Label(root, text=None, fg="black", width=12, height=3)
-label_color_output.grid(row=25, column=1, pady=(20, 0), padx=(5, 5))
+label_color_output.grid(row=25, column=1, pady=(20, 5), padx=(5, 5))
 
 root.mainloop()
