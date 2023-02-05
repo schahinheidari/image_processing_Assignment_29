@@ -33,4 +33,4 @@ We designed color picker by using of `tkinter library`. We could design it using
 
 
 #### Output:
-<img src="output/color picker.png" alt="Color picker" align="center" height="200" width="200">
+<img src="output/color picker.png" alt="Color picker" align="center" height="200" width="400">
